@@ -5,47 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial Microbio</title>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <diV class="header-novidades">
-        <h1>NOVIDADES</h1>
-    </diV>
-    <div class="container-noticias">
-        <div class="bloco-noticia">
-            <img src="https://img.freepik.com/fotos-gratis/tiro-vertical-de-um-prado-ao-por-do-sol-capturado-em-canggu-bali_181624-7503.jpg?semt=ais_incoming&w=740&q=80" alt="Imagem 1">
-            <div class="overlay">
-                <div class="conteudo-texto">
-                    <h2>Título</h2>
-                    <h3>Subtítulo com informações resumidas a respeito da novidade, apenas para tornar visualmente bonita</h3>
-                </div>
-            </div>
-        </div>
-        <div class="bloco-noticia">
-            <img src="https://img.freepik.com/fotos-gratis/arvores-em-um-ceu-nublado_23-2148204071.jpg?semt=ais_incoming&w=740&q=80" alt="Imagem 2">
-            <div class="overlay">
-                <div class="conteudo-texto">
-                    <h2>Título</h2>
-                    <h3>Subtítulo com informações resumidas a respeito da novidade, apenas para tornar visualmente bonita</h3>
-                </div>
-            </div>
-        </div>
-        <div class="bloco-noticia">
-            <img src="https://img.freepik.com/fotos-premium/vista-panoramica-de-um-campo-contra-um-ceu-claro-durante-o-por-do-sol_1048944-12795521.jpg?semt=ais_hybrid&w=740&q=80" alt="Imagem 3">
-            <div class="overlay">
-                <div class="conteudo-texto">
-                    <h2>Título</h2>
-                    <h3>Subtítulo com informações resumidas a respeito da novidade, apenas para tornar visualmente bonita</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="saiba-mais">
-        <button>Saiba Mais</button>
-    </div>
     
-</body>
-</html>
-
 <style>
     body {
         width: 100%;
@@ -54,6 +14,35 @@
         margin: 0;
         font-family:'M PLUS 1', sans-serif;
     }
+
+    .linhas {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        gap: 6px;
+    }
+
+    .linha1 {
+        width: 90%;
+        height: 15px;
+        background: #013029;
+    }
+
+    .linha2 {
+        width: 80%;
+        height: 15px;
+        background: #02483D;
+    }
+
+    .linha3 {
+        width: 70%;
+        height: 15px;
+        background: #b6b6b6;
+    }
+    
+
+
 
     .header-novidades  {
         margin-left: 10px;
@@ -115,7 +104,6 @@
     .bloco-noticia:hover {
         transform: scale(1.1);
         opacity: 1;
-
     }
 
     .overlay .conteudo-texto {
@@ -159,3 +147,49 @@
     }
 
 </style>
+</head>
+<body>
+    <div class="linhas">
+        <div class="linha1"></div>
+        <div class="linha2"></div>
+        <div class="linha3"></div>
+    </div>
+
+    <diV class="header-novidades">
+        <h1>NOVIDADES</h1>
+    </diV>
+    <div class="container-noticias">
+        <div class="bloco-noticia">
+            <img src="https://img.freepik.com/fotos-gratis/tiro-vertical-de-um-prado-ao-por-do-sol-capturado-em-canggu-bali_181624-7503.jpg?semt=ais_incoming&w=740&q=80" alt="Imagem 1">
+            <div class="overlay">
+                <div class="conteudo-texto">
+                    <h2>Título</h2>
+                    <h3>Subtítulo com informações resumidas a respeito da novidade, apenas para tornar visualmente bonita</h3>
+                </div>
+            </div>
+        </div>
+        <div class="bloco-noticia">
+            <img src="https://img.freepik.com/fotos-gratis/arvores-em-um-ceu-nublado_23-2148204071.jpg?semt=ais_incoming&w=740&q=80" alt="Imagem 2">
+            <div class="overlay">
+                <div class="conteudo-texto">
+                    <h2>Título</h2>
+                    <h3>Subtítulo com informações resumidas a respeito da novidade, apenas para tornar visualmente bonita</h3>
+                </div>
+            </div>
+        </div>
+        <div class="bloco-noticia">
+            <img src="https://img.freepik.com/fotos-premium/vista-panoramica-de-um-campo-contra-um-ceu-claro-durante-o-por-do-sol_1048944-12795521.jpg?semt=ais_hybrid&w=740&q=80" alt="Imagem 3">
+            <div class="overlay">
+                <div class="conteudo-texto">
+                    <h2>Título</h2>
+                    <h3>Subtítulo com informações resumidas a respeito da novidade, apenas para tornar visualmente bonita</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="saiba-mais">
+        <button>Saiba Mais</button>
+    </div>
+    
+</body>
+</html>
