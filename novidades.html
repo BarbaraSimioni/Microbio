@@ -79,6 +79,13 @@
         height: 500px;
         overflow: hidden;
         border-radius: 10px;
+        
+        transform: scale(1);
+        opacity: 0.9;
+
+        transition:
+            transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+            opacity 0.6s ease-in-out;
     }
 
     .bloco-noticia img {
@@ -86,6 +93,7 @@
         height: 100%;
         object-fit: cover;
         display: block;
+        border-radius: 10px;
     }
 
     .bloco-noticia .overlay {
@@ -102,12 +110,11 @@
         flex-direction: column;
         justify-content: flex-end;
         padding: 15px;
-
-        transition: transform ease 0.7s;
     }
 
     .bloco-noticia:hover {
-        transform: scale(1.15);
+        transform: scale(1.1);
+        opacity: 1;
 
     }
 
